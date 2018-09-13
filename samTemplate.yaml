@@ -8,7 +8,7 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs6.10
-      CodeUri: ./
+      CodeUri: ./functiona/
       Events:
         MyTimeApi:
           Type: Api
@@ -20,7 +20,7 @@ Resources:
     Properties:
       Handler: index2.handler
       Runtime: nodejs6.10
-      CodeUri: ./
+      CodeUri: ./functionb/
       Events:
         MyTimeApi:
           Type: Api
