@@ -15,3 +15,15 @@ Resources:
           Properties:
             Path: /TimeResource
             Method: GET
+  TimeFunction2:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index2.handler
+      Runtime: nodejs6.10
+      CodeUri: ./
+      Events:
+        MyTimeApi:
+          Type: Api
+          Properties:
+            Path: /TimeResource2
+            Method: GET
